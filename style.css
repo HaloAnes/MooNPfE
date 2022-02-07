@@ -1,0 +1,215 @@
+    body {
+        background: url(11.jpeg) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    div {
+        zoom: 0.92;
+    }
+    
+    form {
+        width: 360px;
+        height: 535px;
+        background: rgba(0, 0, 0, 0.801);
+        color: rgb(255, 255, 255);
+        top: 52%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 70px 40px;
+    }
+    
+    a {
+        float: right;
+        background: #555;
+        padding: 10px 15px;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin-right: 20px;
+        border: none;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        opacity: .7;
+    }
+    
+    h3 {
+        margin: 0;
+        padding: 0 0 10px;
+        text-align: center;
+        font-size: 64px;
+        COLOR: rgb(255, 255, 255);
+    }
+    
+    .avatar {
+        width: 300px;
+        height: 90px;
+        top: -50px;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% -50px);
+    }
+    
+    h1 {
+        MARGIN: -3vh;
+        text-align: center;
+        Font-family: 'P', sans-serif;
+        font-size: 26px;
+    }
+    
+    h2 {
+        text-align: center;
+        Font-family: 'P', sans-serif;
+        font-size: 34px;
+    }
+    
+    input {
+        display: block;
+        border: 2px solid;
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    
+    .error {
+        background: #F2DEDE;
+        color: #A94442;
+        padding: 9px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px auto;
+    }
+    
+    .loginbox input[type="submit"]:hover {
+        cursor: pointer;
+        background-image: linear-gradient(to right, #ff0000, #b300a4, #0212f5);
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    
+    .loginbox {
+        margin: 0;
+        padding: 40;
+        font-weight: bold;
+    }
+    
+    .loginbox input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .loginbox input[type="text"],
+    input[type="password"] {
+        border: none;
+        border-bottom: 1px solid rgb(209, 212, 11);
+        background: transparent;
+        outline: none;
+        height: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+    
+    .loginbox input[type="submit"] {
+        border: none;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #0004fc, #be00af, #ff0000);
+        height: 30px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .tooltip {
+        position: absolute;
+        background: #ff3467;
+        padding: 5px 12px;
+        margin: 5px;
+        font-size: 15px;
+        border-radius: 100%;
+        color: #FFF;
+        font-family: 'Garamond', sans-serif;
+    }
+    
+    .tooltip:before,
+    .tooltip:after {
+        position: absolute;
+        content: '';
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    
+    .tooltip:before {
+        border-width: 20px 8px 0 8px;
+        border-style: solid;
+        border-color: #ff3466 transparent transparent transparent;
+        top: -15px;
+        transform: translateY(20px);
+    }
+    
+    .tooltip:after {
+        content: attr(data-tooltip);
+        background: #ff3466;
+        width: 190px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: 300;
+        top: -75px;
+        left: -10px;
+        padding: 10px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transform: translateY(20px);
+    }
+    
+    .tooltip:hover::before,
+    .tooltip:hover::after {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: rotate(2deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+        70% {
+            transform: rotate(3deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    #anim:hover {
+        animation: shake 500ms ease-in-out forwards;
+    }
+    
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400");
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 200%;
+        TOP: -9.5vh;
+    }
+    
+    input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        color: #ffc107;
+    }
